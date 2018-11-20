@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
-ENV BITCOINCASH_VERSION=0.18.2
-ENV BITCOINCASH_CHECKSUM=28d8511789a126aff16e256a03288948f2660c3c8cb0a4c809c5a8618a519a16
+ENV BITCOINCASH_VERSION=0.18.4
+ENV BITCOINCASH_CHECKSUM=22486042c960828a8faf473db6f5037aef93fe0c5b9aebfeba804850c1303c4b
 
 RUN apt-get update && apt-get install -y wget && apt-get clean
 RUN wget https://download.bitcoinabc.org/${BITCOINCASH_VERSION}/linux/bitcoin-abc-${BITCOINCASH_VERSION}-x86_64-linux-gnu.tar.gz \
